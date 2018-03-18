@@ -8,18 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController, AlphaDelegate {
 
+    @IBOutlet weak var mainText: UILabel!
+    
+    var alphaLink = Alpha()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        alphaLink.delegate = self
+        getPricesFromNYSE(debug: false)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func getPricesFromNYSE(debug:Bool) {
+        alphaLink.getPricesFor(ticker: "SPY", debug: false) { (response) in
+            if let nyseData = response as? [(date:Date, close:Double)] {
+                if debug { print(nyseData) }
+                self.changeUImessageAlpha(message: "We have data from NYSE")}
+        }
     }
-
+    
+    func changeUImessageAlpha(message:String) {
+        print("\nMESSAGE FROM Alpha: \(message)");
+        DispatchQueue.main.async {
+            self.mainText.text = message
+        }
+    }
 
 }
+
 
