@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DF784A1205F0F9000723190 /* Date Value Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF784A0205F0F9000723190 /* Date Value Formatter.swift */; };
 		0DFAE3B9205E1B7D0053FA2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE3B8205E1B7D0053FA2D /* AppDelegate.swift */; };
 		0DFAE3BB205E1B7D0053FA2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE3BA205E1B7D0053FA2D /* ViewController.swift */; };
 		0DFAE3BE205E1B7D0053FA2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFAE3BC205E1B7D0053FA2D /* Main.storyboard */; };
@@ -15,9 +16,11 @@
 		0DFAE3C6205E1B7D0053FA2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFAE3C4205E1B7D0053FA2D /* LaunchScreen.storyboard */; };
 		0DFAE3CE205E1B990053FA2D /* Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE3CD205E1B990053FA2D /* Alpha.swift */; };
 		0DFAE3D0205E46BD0053FA2D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE3CF205E46BD0053FA2D /* Utilities.swift */; };
+		C8DC40DFEF247F9BF5FF387F /* Pods_Stock_Prices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B19CDF4C40AA52B2322125 /* Pods_Stock_Prices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DF784A0205F0F9000723190 /* Date Value Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Value Formatter.swift"; sourceTree = "<group>"; };
 		0DFAE3B5205E1B7D0053FA2D /* Stock Prices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Prices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFAE3B8205E1B7D0053FA2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DFAE3BA205E1B7D0053FA2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		0DFAE3C7205E1B7D0053FA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DFAE3CD205E1B990053FA2D /* Alpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alpha.swift; sourceTree = "<group>"; };
 		0DFAE3CF205E46BD0053FA2D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6F10D22A9599D3A9403DAF60 /* Pods-Stock Prices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Prices.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stock Prices/Pods-Stock Prices.release.xcconfig"; sourceTree = "<group>"; };
+		91B19CDF4C40AA52B2322125 /* Pods_Stock_Prices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stock_Prices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD2ACD56DC8FA92B0C2C40C /* Pods-Stock Prices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Prices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stock Prices/Pods-Stock Prices.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DC40DFEF247F9BF5FF387F /* Pods_Stock_Prices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02B94791EB79B45518B91F1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCD2ACD56DC8FA92B0C2C40C /* Pods-Stock Prices.debug.xcconfig */,
+				6F10D22A9599D3A9403DAF60 /* Pods-Stock Prices.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		08AF2832765772465F8C1573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91B19CDF4C40AA52B2322125 /* Pods_Stock_Prices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0DFAE3AC205E1B7D0053FA2D = {
 			isa = PBXGroup;
 			children = (
 				0DFAE3B7205E1B7D0053FA2D /* Stock Prices */,
 				0DFAE3B6205E1B7D0053FA2D /* Products */,
+				02B94791EB79B45518B91F1F /* Pods */,
+				08AF2832765772465F8C1573 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0DFAE3CD205E1B990053FA2D /* Alpha.swift */,
+				0DF784A0205F0F9000723190 /* Date Value Formatter.swift */,
 				0DFAE3CF205E46BD0053FA2D /* Utilities.swift */,
 			);
 			path = Model;
@@ -88,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DFAE3CA205E1B7D0053FA2D /* Build configuration list for PBXNativeTarget "Stock Prices" */;
 			buildPhases = (
+				0E739BFBB71A1C480DCD3B03 /* [CP] Check Pods Manifest.lock */,
 				0DFAE3B1205E1B7D0053FA2D /* Sources */,
 				0DFAE3B2205E1B7D0053FA2D /* Frameworks */,
 				0DFAE3B3205E1B7D0053FA2D /* Resources */,
+				AC2BA30B0705F24608580654 /* [CP] Embed Pods Frameworks */,
+				1418E0327C1DF25D62BB14AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,11 +178,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E739BFBB71A1C480DCD3B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stock Prices-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1418E0327C1DF25D62BB14AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stock Prices/Pods-Stock Prices-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2BA30B0705F24608580654 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stock Prices/Pods-Stock Prices-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stock Prices/Pods-Stock Prices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0DFAE3B1205E1B7D0053FA2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF784A1205F0F9000723190 /* Date Value Formatter.swift in Sources */,
 				0DFAE3CE205E1B990053FA2D /* Alpha.swift in Sources */,
 				0DFAE3BB205E1B7D0053FA2D /* ViewController.swift in Sources */,
 				0DFAE3C1205E1B7D0053FA2D /* Stock_Prices.xcdatamodeld in Sources */,
@@ -292,6 +377,7 @@
 		};
 		0DFAE3CB205E1B7D0053FA2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD2ACD56DC8FA92B0C2C40C /* Pods-Stock Prices.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +393,7 @@
 		};
 		0DFAE3CC205E1B7D0053FA2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F10D22A9599D3A9403DAF60 /* Pods-Stock Prices.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

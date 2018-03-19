@@ -46,15 +46,15 @@ class Alpha {
                 priceArry.append((date: date , close: closeDouble))
             }
             
-            let ready = priceArry.sorted(by: {$0.date < $1.date})
+            let dateSort = priceArry.sorted(by: {$0.date < $1.date})
             
             if debug {
-                for each in ready {
+                for each in dateSort {
                     print("\(each.date) \t\(each.close)")
                 }
             }
             
-            callback(priceArry as Array<AnyObject>)
+            callback(dateSort as Array<AnyObject>)
             
         }
         task.resume()

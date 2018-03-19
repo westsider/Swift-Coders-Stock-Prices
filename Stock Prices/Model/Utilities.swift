@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Charts
 
 class Utilities {
 
@@ -19,4 +20,12 @@ class Utilities {
         if ( debug ) { print("Convertion to Date: \(date)\n") }
         return date
     }
+    
+    class func convertToStringNoTimeFrom(date: Date)-> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter.string(from: date)
+    }
 }
+

@@ -18,35 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is happening in my app?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgV-ol-YIz">
-                                <rect key="frame" x="16" y="113" width="343" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AxH-Jc-j3f" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is happening in my app?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgV-ol-YIz">
+                                        <rect key="frame" x="72.5" y="28" width="229.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="h7E-eT-qxc"/>
+                                    <constraint firstItem="SgV-ol-YIz" firstAttribute="top" secondItem="AxH-Jc-j3f" secondAttribute="top" constant="28" id="BBr-r1-65O"/>
+                                    <constraint firstItem="SgV-ol-YIz" firstAttribute="centerX" secondItem="AxH-Jc-j3f" secondAttribute="centerX" id="N7e-JE-LOk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO5-Bn-eDe">
-                                <rect key="frame" x="16" y="148" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="82o-Fi-z7c"/>
-                                </constraints>
-                                <state key="normal" title="Show Chart"/>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SgV-ol-YIz" secondAttribute="trailing" constant="16" id="CNE-bs-Wlq"/>
-                            <constraint firstItem="HO5-Bn-eDe" firstAttribute="top" secondItem="SgV-ol-YIz" secondAttribute="bottom" constant="14" id="KHX-p8-JvV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HO5-Bn-eDe" secondAttribute="trailing" constant="16" id="Oty-zi-8aF"/>
-                            <constraint firstItem="SgV-ol-YIz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="750" constant="93" id="ZfH-M9-9zb"/>
-                            <constraint firstItem="SgV-ol-YIz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ajC-FS-Nge"/>
-                            <constraint firstItem="HO5-Bn-eDe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="h3e-yi-zSE"/>
+                            <constraint firstItem="AxH-Jc-j3f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5cY-MA-4vT"/>
+                            <constraint firstItem="AxH-Jc-j3f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5cv-sH-0zC"/>
+                            <constraint firstItem="AxH-Jc-j3f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q55-7S-Dt6"/>
+                            <constraint firstItem="AxH-Jc-j3f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gC4-op-Maa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="chtChart" destination="AxH-Jc-j3f" id="FgC-aa-1I7"/>
                         <outlet property="mainText" destination="SgV-ol-YIz" id="Ziq-Tw-MmN"/>
                     </connections>
                 </viewController>
