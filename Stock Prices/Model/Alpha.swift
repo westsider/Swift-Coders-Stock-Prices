@@ -4,7 +4,7 @@
 //
 //  Created by Warren Hansen on 3/17/18.
 //  Copyright © 2018 Warren Hansen. All rights reserved.
-//
+//  https://www.alphavantage.co/documentation/
 
 import Foundation
 
@@ -53,14 +53,10 @@ class Alpha {
                     print("\(each.date) \t\(each.close)")
                 }
             }
-            
             callback(dateSort as Array<AnyObject>)
-            
         }
         task.resume()
     }
-    
-    
 }
 
 

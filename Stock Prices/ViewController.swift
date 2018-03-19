@@ -33,18 +33,14 @@ class MainViewController: UIViewController, AlphaDelegate {
             xAxis.labelPosition = .bottomInside
             xAxis.drawGridLinesEnabled = false
             let formatter = ChartStringFormatter()
+            let dateArray = data.map { $0.date}
+            let dateStrArr = dateArray.map { value in Utilities.convertToStringNoTimeFrom(date: value) }
             
-            var dateArray:[String] = []
-            for each in data {
-                
-                let date = Utilities.convertToStringNoTimeFrom(date: each.date)
-                dateArray.append(date)
-            }
-            formatter.nameValues = dateArray
+            // convert double x axis to string
+            formatter.nameValues = dateStrArr
             xAxis.valueFormatter = formatter
             
             for (i, each) in data.enumerated() {
-
                 let value = ChartDataEntry(x: Double(i), y: each.close)
                 lineChartEntry.append(value)
             }
